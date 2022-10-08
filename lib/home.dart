@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:introducao_flutter/singleton_build_context.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,6 +16,7 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Farofa'),
+            Text('${context.id}'),
             ElevatedButton(
               onPressed: () {},
               child: const Text('Alterar texto'),
